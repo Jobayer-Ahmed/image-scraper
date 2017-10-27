@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <script src="/javascripts/jquery-slim.min.js"></script>
+    <!-- <script src="/javascripts/bootstrap.min.js"></script> -->
+  </head>
+  <body class="text-center">
+    <h1><%= title %></h1>
+    <div class="row mt-5">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <form action="/image-scraper" method="POST">
+          <div class="form-group">
+            <input name="url" type="text" class="form-control"placeholder="Enter a web address to scrap all image">
+            <button type="submit" class="btn btn-lg text-white btn-outline-danger mt-3 submit">Dark</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-3"></div>
+    </div>
+  </body>
+</html>
